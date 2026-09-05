@@ -189,8 +189,9 @@
                 <div class="about__data">
                     <p class="about__description">
                         Associate Consultant at Capgemini with 2+ years of experience building aerospace platforms,
-                        offline desktop applications, and AI-powered document pipelines. I specialise in Java, Spring
-                        Boot, Kafka, and multi-agent LLM orchestration. AWS Certified Developer and Azure AI Engineer.
+                        offline desktop applications, and AI-powered document pipelines. I specialize in Java, Spring
+                        Boot, Kafka, and multi-agent LLM orchestration, and hold AWS Certified Developer – Associate and
+                        Microsoft Certified: Azure AI Engineer Associate certifications.
                     </p>
 
                     <div class="about__info">
@@ -443,34 +444,6 @@
                     <span class="button button--flex button--small button--link services__button">
                         View More <i class="uil uil-arrow-right button__icon"></i>
                     </span>
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Aerospace Legal Hold Platform</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Migrated EC2 batch workload to scheduled AWS Lambda — cut runtime from ~12 min to
-                                        ~4 min while lowering compute costs.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Designed automated rollback &amp; failure-notification workflows, restoring app
-                                        state on failed executions.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Integrated Splunk for centralized logging &amp; observability across the stack.
-                                    </p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Developed features across Spring Boot / Angular and a secondary Python / Flask
-                                        app.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Project 2 -->
@@ -482,34 +455,6 @@
                     <span class="button button--flex button--small button--link services__button">
                         View More <i class="uil uil-arrow-right button__icon"></i>
                     </span>
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Offline Aircraft Engine Repair Manual App</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Co-developed Spring Boot backend of an offline desktop app (Vue.js + Electron
-                                        frontend).</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Built local ingestion pipeline processing ~1 GB engine ZIP packages in ~15
-                                        minutes.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Implemented SQLite FTS5 full-text search — under 50 ms retrieval across ~5,000
-                                        documents.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Introduced Caffeine caching &amp; Spring WebMVC document streaming for
-                                        constrained offline environments.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Project 3 -->
@@ -521,35 +466,103 @@
                     <span class="button button--flex button--small button--link services__button">
                         View More <i class="uil uil-arrow-right button__icon"></i>
                     </span>
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">AI-Powered Scanned Manual → Structured XML</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Architected OCR + parallel LLM inference + deterministic XML pipeline — 20-page
-                                        manuals in ~6–7 min end-to-end.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Designed multi-stage few-shot &amp; XML-constrained prompting with a
-                                        deterministic XML builder that reuses prior context.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Scaled horizontally with concurrent AWS ECS tasks, Lambda orchestration, and
-                                        CloudFormation-defined infrastructure.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Automated a conversion process previously impractical to perform manually.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
 
+            </div>
+
+            <!--==================== WORK PROJECTS MODALS ====================-->
+            <!-- Modal 1 -->
+            <div class="services__modal" id="modal-project-1">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Aerospace Legal Hold Platform</h4>
+                    <i class="uil uil-times services__modal-close"></i>
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Migrated EC2 batch workload to scheduled AWS Lambda — cut runtime from ~12 min to ~4 min while lowering compute costs.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Designed automated rollback &amp; failure-notification workflows, restoring app state on failed executions.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Integrated Splunk for centralized logging &amp; observability across the stack.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Developed features across Spring Boot / Angular and a secondary Python / Flask app.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div class="services__modal" id="modal-project-2">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Offline Aircraft Engine Repair Manual App</h4>
+                    <i class="uil uil-times services__modal-close"></i>
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Co-developed the Spring Boot backend for a fully offline desktop application with a Vue.js + Electron frontend, on a cross-functional team of 5 (2 backend, 2 frontend, 1 DevOps), bundling a Java runtime inside Electron so the entire backend runs locally with no internet dependency.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Designed and built a local ingestion pipeline that parses and indexes ~1 GB engine documentation ZIP packages in ~15 minutes, handling structured extraction and storage of thousands of technical manual pages for offline retrieval.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Implemented SQLite FTS5 full-text search delivering sub-50ms retrieval across ~5,000 documents, enabling technicians to instantly search dense technical manuals without any network connection.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Introduced a Caffeine caching layer and Spring WebMVC-based document streaming to minimize memory overhead and deliver large manual files efficiently in resource-constrained, offline field environments.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Automated cross-platform build and deployment using AWS CodeBuild, producing signed Windows and Linux installers and publishing them to S3 for distribution.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Extended the architecture to support a LAN mode, allowing mobile and tablet devices to connect to a desktop instance over the local network and access manuals without installing the full application.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div class="services__modal" id="modal-project-3">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">AI-Powered Scanned Manual → Structured XML</h4>
+                    <i class="uil uil-times services__modal-close"></i>
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Architected an end-to-end OCR + parallel LLM inference + deterministic XML pipeline that converts 20-page scanned engine manuals into structured XML in ~6–7 minutes, replacing a process that was previously impractical to perform manually at scale.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Designed an event-driven ingestion flow where PDFs uploaded to S3 automatically trigger a Lambda function, which orchestrates multi-tasked ECS jobs for parallel OCR preprocessing before handing off to downstream staged processing.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Built a two-stage LLM processing layer that generates per-page structured XML using multi-stage few-shot and XML-constrained prompting, then applies a deterministic XML builder that reuses prior page context to maintain consistency across the document.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Developed an automated LLM-assisted repair step to detect and fix cross-page merge inconsistencies, reducing manual reconciliation of OCR and LLM-generated output errors.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Scaled the pipeline horizontally using concurrent AWS ECS tasks, Lambda orchestration, and CloudFormation-defined infrastructure, enabling reliable throughput as document volume increased.</p>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Served as senior developer on a 6-person cross-functional team (2 Python backend engineers, 1 DevOps, 3 QA testers), owning core architecture and pipeline design decisions.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
