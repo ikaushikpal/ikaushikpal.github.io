@@ -73,21 +73,44 @@ const modalViews = document.querySelectorAll('.services__modal'),
     modalCloses = document.querySelectorAll('.services__modal-close');
 
 let modal = function (modalClick) {
-    modalViews[modalClick].classList.add('active-modal');
+    if (modalViews[modalClick]) {
+        modalViews[modalClick].classList.add('active-modal');
+        document.body.classList.add('modal-open');
+    }
+};
+
+let closeModal = function () {
+    modalViews.forEach((modalView) => {
+        modalView.classList.remove('active-modal');
+    });
+    document.body.classList.remove('modal-open');
 };
 
 modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () => {
+    modalBtn.addEventListener('click', (e) => {
+        e.preventDefault();
         modal(i);
     });
 });
 
 modalCloses.forEach((modalClose) => {
     modalClose.addEventListener('click', () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove('active-modal');
-        });
+        closeModal();
     });
+});
+
+modalViews.forEach((modalView) => {
+    modalView.addEventListener('click', (e) => {
+        if (e.target === modalView) {
+            closeModal();
+        }
+    });
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
